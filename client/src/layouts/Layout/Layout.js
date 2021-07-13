@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header />
-      <div id="main">{children}</div>
-      <Footer />
+        <div id="layout">{children}</div>
+      {/* <Footer /> */}
     </Fragment>
   )
 }

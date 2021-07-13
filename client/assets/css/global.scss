@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #990d15;
+  --box-shadow: 2px 2px 2px rgba(112, 112, 112, 0.1);
+  --box-shadow-hover: 0 5px 5px rgba(112, 112, 112, 0.4);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+textarea,
+pre {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  background: #131720;
+}
+
+@import '../../src/templates/Main/Main.scss';
+@import '../../src/components/Header/Header.scss';
+@import '../../src/components/Footer/Footer.scss';
+@import '../../src/layouts/Layout/Layout.scss';
+@import '../../src/components/Banner/Banner.scss';
