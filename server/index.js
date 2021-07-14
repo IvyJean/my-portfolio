@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.send('We are on home');
 })
 
-const CONNECTION_URL = 'mongodb+srv://testRest:testRest123@cluster0.bne94.mongodb.net/sample_rest?retryWrites=true&w=majority'
+const CONNECTION_URL = process.env.CONNECTION_URL
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
